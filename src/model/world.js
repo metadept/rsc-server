@@ -196,6 +196,8 @@ class World {
 
     removeEntity(type, entity) {
         if (!this[type].remove(entity)) {
+            console.log(type);
+            console.log(entity);
             throw new Error(`unable to remove entity ${entity}`);
         }
 
